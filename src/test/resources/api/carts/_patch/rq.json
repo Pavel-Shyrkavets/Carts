@@ -1,0 +1,9 @@
+{
+  "merge": true,
+  "products": [
+    {
+      "id": "${product_id}",
+      "quantity": "${product_quantity}"
+    }
+  ]
+}
