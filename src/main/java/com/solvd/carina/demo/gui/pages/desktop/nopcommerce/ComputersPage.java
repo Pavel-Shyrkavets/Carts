@@ -1,5 +1,6 @@
-package com.solvd.carina.demo.gui.pages.nopcommerce;
+package com.solvd.carina.demo.gui.pages.desktop.nopcommerce;
 
+import com.solvd.carina.demo.gui.pages.common.nopcommerce.ComputersPageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +17,5 @@ public class ComputersPage extends ComputersPageBase {
         setUiLoadedMarker(computersLabel);
     }
 
-    public ExtendedWebElement getComputersLabel() {
-        return computersLabel;
-    }
+    public ExtendedWebElement getComputersLabel() { return computersLabel; }
 }
