@@ -49,8 +49,8 @@ public class WebNOPCommerceTest implements IAbstractTest {
     public void testSearch() {
         String text = "Samsung";
         String searchPageURL = "https://demo.nopcommerce.com/search?q=Samsung";
-
         SearchPageBase searchPage = homePage.search(text);
+
         Assert.assertTrue(searchPage.isUrlAsExpected(searchPageURL));
     }
 
@@ -60,12 +60,12 @@ public class WebNOPCommerceTest implements IAbstractTest {
         int productIndex = 0;
         char euroSign = '€';
         String changedURL = "https://demo.nopcommerce.com/changecurrency/6?returnUrl=%2F";
+        SoftAssert softAssert = new SoftAssert();
 
         homePage.selectCurrency(currencyIndex);
         /* At the moment the website is blocked for test automation
         String price = homePage.getProductPrices().get(productIndex).getText();
         Assert.assertTrue(price.contains(String.valueOf(euroSign))); */
-        SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(homePage.isUrlAsExpected(changedURL));
         softAssert.assertAll();
     }
