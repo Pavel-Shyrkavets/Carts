@@ -61,7 +61,6 @@ public class WebNOPCommerceTest implements IAbstractTest {
         char euroSign = '€';
         String changedURL = "https://demo.nopcommerce.com/changecurrency/6?returnUrl=%2F";
 
-        homePage.open();
         homePage.selectCurrency(currencyIndex);
         /* At the moment the website is blocked for test automation
         String price = homePage.getProductPrices().get(productIndex).getText();
