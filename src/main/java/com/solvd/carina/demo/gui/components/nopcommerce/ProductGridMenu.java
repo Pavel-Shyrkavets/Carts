@@ -13,9 +13,14 @@ public class ProductGridMenu extends AbstractUIObject {
     @FindBy(xpath = ".//*[contains(@class, 'actual-price')]")
     private List<ExtendedWebElement> productPrices;
 
+    @FindBy(xpath = ".//*[@class = 'product-title']/a")
+    private List<ExtendedWebElement> productTitleLinks;
+
     public ProductGridMenu(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
     public List<ExtendedWebElement> getProductPrices() { return productPrices; }
+
+    public List<ExtendedWebElement> getProductTitleLinks() { return productTitleLinks; }
 }

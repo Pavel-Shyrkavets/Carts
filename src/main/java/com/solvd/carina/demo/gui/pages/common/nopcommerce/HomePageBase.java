@@ -26,6 +26,8 @@ public abstract class HomePageBase extends AbstractPage {
 
     public abstract List<ExtendedWebElement> getProductPrices();
 
+    public abstract List<ExtendedWebElement> getProductTitleLinks();
+
     @Override
     public void open() { super.open(); }
 }

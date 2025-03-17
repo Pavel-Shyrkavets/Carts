@@ -76,4 +76,7 @@ public class HomePage extends HomePageBase {
 
     @Override
     public List<ExtendedWebElement> getProductPrices() { return productGridMenu.getProductPrices(); }
+
+    @Override
+    public List<ExtendedWebElement> getProductTitleLinks() { return productGridMenu.getProductTitleLinks(); }
 }
