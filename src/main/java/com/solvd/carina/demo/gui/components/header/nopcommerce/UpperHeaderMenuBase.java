@@ -1,4 +1,4 @@
-package com.solvd.carina.demo.gui.components.header;
+package com.solvd.carina.demo.gui.components.header.nopcommerce;
 
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;

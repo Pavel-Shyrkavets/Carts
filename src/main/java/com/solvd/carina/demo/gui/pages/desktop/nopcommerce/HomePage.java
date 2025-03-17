@@ -1,7 +1,7 @@
 package com.solvd.carina.demo.gui.pages.desktop.nopcommerce;
 
 import com.solvd.carina.demo.gui.components.footer.nopcommerce.UpperFooterMenu;
-import com.solvd.carina.demo.gui.components.header.UpperHeaderMenu;
+import com.solvd.carina.demo.gui.components.header.nopcommerce.UpperHeaderMenu;
 import com.solvd.carina.demo.gui.components.nopcommerce.HeaderMenu;
 import com.solvd.carina.demo.gui.components.nopcommerce.ProductGridMenu;
 import com.solvd.carina.demo.gui.components.nopcommerce.SearchForm;

@@ -33,5 +33,6 @@ public class SelectCurrencyTest implements IAbstractTest {
         Assert.assertTrue(price.contains(String.valueOf(euroSign))); */
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(homePage.isUrlAsExpected(changedURL));
+        softAssert.assertAll();
     }
 }
